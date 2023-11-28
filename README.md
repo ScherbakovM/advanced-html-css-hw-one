@@ -1,4 +1,5 @@
-**чтобы перейти на страничку product необходимо дописать путь в url**
+**чтобы перейти на страничку product необходимо дописать путь в url**   
+
 ![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/4c1e9763-7f93-476b-bcd9-0c0c752b625b)    
 
 ``
