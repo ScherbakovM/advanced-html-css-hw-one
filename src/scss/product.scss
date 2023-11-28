@@ -1,7 +1,6 @@
 @import "variable.scss";
 
 .product_main {
-    
 }
 
 .arrivals_banner {
@@ -26,7 +25,7 @@
     width: max-content;
     height: max-content;
     .arrivals_ul {
-        font-family: 'Lato Light';
+        font-family: "Lato Light";
         @include flex-center;
         font-size: 14px;
         gap: 5px;
@@ -49,15 +48,16 @@
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     border: 1px solid #eaeaea;
     scrollbar-width: none; /* для Firefox */
-    -ms-overflow-style: none;  /* для Internet Explorer и Edge */
+    -ms-overflow-style: none; /* для Internet Explorer и Edge */
     padding-top: 30px;
     padding-bottom: 60px;
 }
 
-.section_preview_slider::-webkit-scrollbar { /* для Chrome, Safari и Opera */
+.section_preview_slider::-webkit-scrollbar {
+    /* для Chrome, Safari и Opera */
     display: none;
 }
 
@@ -71,16 +71,15 @@
 
 .arrival_promo_img {
     height: 768px;
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
 .arrow {
     height: 30px;
-    
 }
 .arrow_left_button {
     position: absolute;
@@ -122,7 +121,7 @@
     @include flex-center;
     width: 100%;
     height: max-content;
-    
+
     & .woman_promo_wrapper {
         transform: translateY(-60px);
         @include flex-center;
@@ -136,40 +135,39 @@
 
     & .woman_promo_logo {
         margin-top: 64px;
-        font-family: 'Lato Light';
+        font-family: "Lato Light";
         color: $pink_text_color;
         font-size: 14px;
     }
 
-    & .woman_promo_main_description{
+    & .woman_promo_main_description {
         margin-top: 48px;
-        font-family: 'Lato Light';
+        font-family: "Lato Light";
         text-align: center;
         width: 555px;
         font-size: 14px;
-        color: #5E5E5E;
+        color: #5e5e5e;
         word-wrap: break-word;
     }
 
     & .woman_promo_main_tag {
         margin-top: 12px;
-        font-family: 'Lato Light';
-        color: #4D4D4D;
-
+        font-family: "Lato Light";
+        color: #4d4d4d;
     }
 
     & .pink_line {
         margin-top: 12px;
         height: 3px;
         width: 63px;
-        background-color: #EF5B70;
+        background-color: #ef5b70;
     }
 
     & .gray_line {
         margin-top: 64px;
         height: 1px;
         width: 641px;
-        background-color: #EAEAEA;
+        background-color: #eaeaea;
     }
     & .price_promo {
         margin-top: 32px;
@@ -179,23 +177,60 @@
 }
 
 .arrivals_choose {
-    @include flex-center;
+    display: flex;
     gap: 22px;
     margin-top: 64px;
     & .choose_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6f6e6e;
         font-size: 14px;
-        color: #6F6E6E;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
-}
 
-select {
-    width: 18px; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    border: none;
-    color: #6F6E6E;
-    cursor: pointer;
+    & summary {
+        user-select: none;
+    }
+    & summary::-webkit-details-marker {
+        display: none;
+    }
+
+    & details summary:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  width='11' height='8' viewBox='0 0 11 6' fill='none'%3E%3Cpath d='M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z' fill='%236F6E6E'/%3E%3C/svg%3E");
+        margin-left: 8px;
+        transition: 0.3s ease all;
+        cursor: pointer;
+    }
+
+    & details[open] summary:after {
+        transform: rotate(-180deg);
+        transform-origin: center;
+    }
+
+    & .item_choose {
+        cursor: pointer;
+        padding: 10px 20px;
+        color: #6f6e6e;
+    }
+
+    & .item_choose:hover {
+        cursor: pointer;
+        padding: 10px 20px;
+        color: #6f6e6e;
+        background-color: #ef5b70;
+        color: white;
+    }
+
+    & .content_choose {
+        margin-top: 20px;
+        width: 100px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid $pink_text_color;
+    }
 }
 
 .add_to_cart_arrivals {
@@ -231,7 +266,6 @@ select {
     cursor: pointer;
 }
 
-
 .arrivals_promo_top_card_container {
     @include flex-center;
     width: 100%;
@@ -248,11 +282,11 @@ select {
         padding-bottom: 16px;
         padding-left: 20px;
         padding-right: 28px;
-        background-color: #F8F8F8;
+        background-color: #f8f8f8;
     }
 
-    & .arrivals_promo_top_card{
-        @include  flex-center;
+    & .arrivals_promo_top_card {
+        @include flex-center;
         flex-direction: column;
         width: min-content;
         height: max-content;
@@ -263,10 +297,8 @@ select {
     }
 }
 
-
 @media (width < 2010px) {
     .arrivals_promo_top_card_container {
-        
         & .top_card_image {
             height: 420px;
             object-fit: cover;

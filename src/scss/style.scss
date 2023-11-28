@@ -205,7 +205,7 @@
 
 .promo_model {
   width: 800px;
-  height: 764px;
+  height: 1024px;
   object-fit: contain;
 }
 
@@ -728,6 +728,10 @@
 }
 
 @media (width < 1550px) {
+  .promo_model {
+    height: 768px;
+  }
+
   .item_img {
     width: 450px;
     height: 100%;
