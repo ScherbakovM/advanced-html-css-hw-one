@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$black: #222222;
+$pink_background: #F1E4E6;
+$pink_text_color: #F16D7F;
+$white_text_color: #ffffff;
+$gray_text_color: #9F9F9F;
+$pink_item_text_color: #F26376;
+$pink_item_border_color: #F26376;
+$item_background_card_color: #F8F8F8;
+
+
+@mixin width {
+    width: 71.25%;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+@font-face {
+	font-family: 'Lato Light';
+	src: url('/src/fonts/lato_light.eot'); 
+	src: url('/src/fonts/lato_light.eot') format('embedded-opentype'), 
+		url('/src/fonts/lato_light.woff2') format('woff2'), 
+		url('/src/fonts/lato_light.woff') format('woff'), 
+		url('/src/fonts/lato_light.ttf') format('truetype'), 
+		url('/src/fonts/lato_light.svg') format('svg');
+}
+

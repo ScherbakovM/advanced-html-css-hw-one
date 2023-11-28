@@ -1,0 +1,275 @@
+@import "variable.scss";
+
+.product_main {
+    
+}
+
+.arrivals_banner {
+    width: 100%;
+    height: max-content;
+    background-color: #f8f3f4;
+    @include flex-center;
+}
+
+.arrival_wrapper {
+    @include width;
+    @include flex-space-between;
+    & p {
+        color: $pink_text_color;
+        font-size: 24px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.arrivals_menu {
+    width: max-content;
+    height: max-content;
+    .arrivals_ul {
+        font-family: 'Lato Light';
+        @include flex-center;
+        font-size: 14px;
+        gap: 5px;
+        color: #636363;
+        & li:last-child {
+            font-weight: bold;
+            color: $pink_text_color;
+        }
+    }
+}
+
+.section_preview_promo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_preview_slider {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #F7F7F7;
+    border: 1px solid #eaeaea;
+    scrollbar-width: none; /* для Firefox */
+    -ms-overflow-style: none;  /* для Internet Explorer и Edge */
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.section_preview_slider::-webkit-scrollbar { /* для Chrome, Safari и Opera */
+    display: none;
+}
+
+.arrival_card {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+}
+
+.arrival_promo_img {
+    height: 768px;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.arrow {
+    height: 30px;
+    
+}
+.arrow_left_button {
+    position: absolute;
+    left: 0;
+    @include flex-center;
+    background-color: #d8d8d881;
+    width: 47px;
+    height: 47px;
+    transition: 0.5s ease all;
+    opacity: 1;
+    & path {
+        transition: 0.3s ease all;
+    }
+    &:hover path {
+        fill: $pink_text_color;
+    }
+}
+.arrow_right_button {
+    right: 0;
+    position: absolute;
+    @include flex-center;
+    background-color: #d8d8d881;
+    width: 47px;
+    height: 47px;
+    transition: 0.5s ease all;
+    & path {
+        transition: 0.3s ease all;
+    }
+    &:hover path {
+        fill: $pink_text_color;
+    }
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.woman_promo {
+    @include flex-center;
+    width: 100%;
+    height: max-content;
+    
+    & .woman_promo_wrapper {
+        transform: translateY(-60px);
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        width: 71.3125%;
+        height: max-content;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+    }
+
+    & .woman_promo_logo {
+        margin-top: 64px;
+        font-family: 'Lato Light';
+        color: $pink_text_color;
+        font-size: 14px;
+    }
+
+    & .woman_promo_main_description{
+        margin-top: 48px;
+        font-family: 'Lato Light';
+        text-align: center;
+        width: 555px;
+        font-size: 14px;
+        color: #5E5E5E;
+        word-wrap: break-word;
+    }
+
+    & .woman_promo_main_tag {
+        margin-top: 12px;
+        font-family: 'Lato Light';
+        color: #4D4D4D;
+
+    }
+
+    & .pink_line {
+        margin-top: 12px;
+        height: 3px;
+        width: 63px;
+        background-color: #EF5B70;
+    }
+
+    & .gray_line {
+        margin-top: 64px;
+        height: 1px;
+        width: 641px;
+        background-color: #EAEAEA;
+    }
+    & .price_promo {
+        margin-top: 32px;
+        font-size: 24px;
+        color: $pink_text_color;
+    }
+}
+
+.arrivals_choose {
+    @include flex-center;
+    gap: 22px;
+    margin-top: 64px;
+    & .choose_name {
+        font-size: 14px;
+        color: #6F6E6E;
+    }
+}
+
+select {
+    width: 18px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: none;
+    color: #6F6E6E;
+    cursor: pointer;
+}
+
+.add_to_cart_arrivals {
+    @include flex-center;
+    gap: 22px;
+    padding-left: 24px;
+    padding-right: 57px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 48px;
+    margin-bottom: 65px;
+    border: 1px solid $pink_text_color;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    &:hover {
+        background-color: $pink_text_color;
+    }
+    & path {
+        transition: 0.3s ease all;
+    }
+    &:hover path {
+        fill: white;
+    }
+    & p {
+        color: $pink_text_color;
+        font-size: 16px;
+        transition: 0.3s ease all;
+    }
+    &:hover p {
+        color: white;
+        font-size: 16px;
+    }
+    cursor: pointer;
+}
+
+
+.arrivals_promo_top_card_container {
+    @include flex-center;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 128px;
+    & .arrivals_promo_top_card_container_wrapper {
+        @include flex-space-between;
+        height: max-content;
+        width: 71.3125%;
+    }
+
+    & .top_card_about {
+        padding-top: 24px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        padding-right: 28px;
+        background-color: #F8F8F8;
+    }
+
+    & .arrivals_promo_top_card{
+        @include  flex-center;
+        flex-direction: column;
+        width: min-content;
+        height: max-content;
+    }
+    & .top_card_image {
+        height: 540px;
+        object-fit: cover;
+    }
+}
+
+
+@media (width < 2010px) {
+    .arrivals_promo_top_card_container {
+        
+        & .top_card_image {
+            height: 420px;
+            object-fit: cover;
+        }
+    }
+}
