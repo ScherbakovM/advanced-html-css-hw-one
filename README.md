@@ -13,6 +13,9 @@ catalog.html
 
 ![chrome-capture-2023-11-28](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/b1909b9c-a901-4580-b4fe-6fb3f69d0e76)
 
+![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/2e468fc5-4ae9-464c-98e5-1333f6316fbb)
+
+
 
 сборка на vite
 
