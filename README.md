@@ -20,7 +20,7 @@ Main
 
 Product
 
-![chrome-capture-2023-11-28](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/b1909b9c-a901-4580-b4fe-6fb3f69d0e76)
+![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/c567a1ea-f7ff-450a-98f9-8fb58c73cb18)
 
 Catalog
 
