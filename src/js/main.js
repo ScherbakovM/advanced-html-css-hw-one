@@ -1,6 +1,7 @@
 import '../scss/style.scss';
 import '../scss/product.scss';
 import '../scss/catalog.scss';
+import '../scss/cart.scss';
 import { animate } from "motion"
 
 
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let burgerOpen = false;
 
-let burger = document.querySelector('.burger');
+let burger = document.querySelector('.nav_img');
 burger.addEventListener('click', () => {
     if (burgerOpen) {
         animate('.menu_wrapper', { opacity: 0, transform: 'translateY(0)' });

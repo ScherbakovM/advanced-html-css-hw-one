@@ -120,6 +120,7 @@
   transition: all 0.3s ease-in-out;
   background-color: $pink_background;
   overflow: hidden;
+  pointer-events: none;
   box-shadow: $shadow-menu;
 }
 
@@ -134,6 +135,7 @@
   padding-bottom: 32px;
   padding-right: 72px;
   opacity: 0;
+  pointer-events: all;
   transition: 0.3s ease all;
   transform: translateY(-500px);
   z-index: 1;

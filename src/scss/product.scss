@@ -1,6 +1,10 @@
 @import "variable.scss";
 
 .product_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .arrivals_banner {
@@ -306,4 +310,15 @@
     }
 }
 
+.promo__card-container {
+    width: $max-width;
+}
 
+
+@media (width < 1024px) {
+    .arrival_wrapper {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
