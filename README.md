@@ -35,7 +35,9 @@ Cart
 
 ![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/bf870425-3092-4102-b770-8c1f57bd05f8)
 
+Registration
 
+![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/44b3c779-08ce-4cc1-9c04-f93430a1fda2)
 
 
 сборка на vite
