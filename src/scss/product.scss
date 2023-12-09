@@ -1,22 +1,23 @@
 @import "variable.scss";
 
-.product_main {
+.product__main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.arrivals_banner {
+.arrivals__banner {
     width: 100%;
     height: max-content;
     background-color: #f8f3f4;
     @include flex-center;
 }
 
-.arrival_wrapper {
+.arrival__wrapper {
     @include width;
     @include flex-space-between;
+
     & p {
         color: $pink_text_color;
         font-size: 24px;
@@ -25,15 +26,17 @@
     }
 }
 
-.arrivals_menu {
+.arrivals__menu {
     width: max-content;
     height: max-content;
-    .arrivals_ul {
+
+    .arrivals__ul {
         font-family: "Lato Light";
         @include flex-center;
         font-size: 14px;
         gap: 5px;
         color: #636363;
+
         & li:last-child {
             font-weight: bold;
             color: $pink_text_color;
@@ -56,8 +59,10 @@
     white-space: nowrap;
     background-color: #f7f7f7;
     border: 1px solid #eaeaea;
-    scrollbar-width: none; /* для Firefox */
-    -ms-overflow-style: none; /* для Internet Explorer и Edge */
+    scrollbar-width: none;
+    /* для Firefox */
+    -ms-overflow-style: none;
+    /* для Internet Explorer и Edge */
     padding-top: 30px;
     padding-bottom: 60px;
 }
@@ -86,8 +91,9 @@
 
 .arrow {
     height: 30px;
-    
+
 }
+
 .arrow_left_button {
     position: absolute;
     left: 0;
@@ -97,15 +103,19 @@
     height: 47px;
     transition: 0.5s ease all;
     opacity: 1;
+
     & path {
         transition: 0.3s ease all;
     }
+
     &:hover path {
         fill: $pink_text_color;
     }
+
     z-index: 999999;
-    
+
 }
+
 .arrow_right_button {
     right: 0;
     position: absolute;
@@ -114,12 +124,15 @@
     width: 47px;
     height: 47px;
     transition: 0.5s ease all;
+
     & path {
         transition: 0.3s ease all;
     }
+
     &:hover path {
         fill: $pink_text_color;
     }
+
     z-index: 1;
 }
 
@@ -127,12 +140,12 @@
     transform: rotate(180deg);
 }
 
-.woman_promo {
+.woman-promo {
     @include flex-center;
     width: 100%;
     height: max-content;
 
-    & .woman_promo_wrapper {
+    & .woman-promo__wrapper {
         transform: translateY(-60px);
         @include flex-center;
         flex-direction: column;
@@ -143,7 +156,7 @@
         border: 1px solid #eaeaea;
     }
 
-    & .woman_promo_logo {
+    & .woman-promo__logo {
         margin-top: 64px;
         font-family: "Lato Light";
         color: $pink_text_color;
@@ -179,6 +192,7 @@
         width: 641px;
         background-color: #eaeaea;
     }
+
     & .price_promo {
         margin-top: 32px;
         font-size: 24px;
@@ -190,6 +204,7 @@
     display: flex;
     gap: 22px;
     margin-top: 64px;
+
     & .choose_name {
         display: flex;
         justify-content: center;
@@ -204,6 +219,7 @@
     & summary {
         user-select: none;
     }
+
     & summary::-webkit-details-marker {
         display: none;
     }
@@ -255,24 +271,30 @@
     border: 1px solid $pink_text_color;
     background-color: transparent;
     transition: 0.3s ease all;
+
     &:hover {
         background-color: $pink_text_color;
     }
+
     & path {
         transition: 0.3s ease all;
     }
+
     &:hover path {
         fill: white;
     }
+
     & p {
         color: $pink_text_color;
         font-size: 16px;
         transition: 0.3s ease all;
     }
+
     &:hover p {
         color: white;
         font-size: 16px;
     }
+
     cursor: pointer;
 }
 
@@ -281,6 +303,7 @@
     width: 100%;
     height: max-content;
     margin-bottom: 128px;
+
     & .arrivals_promo_top_card_container_wrapper {
         @include flex-space-between;
         height: max-content;
@@ -301,6 +324,7 @@
         width: min-content;
         height: max-content;
     }
+
     & .top_card_image {
         height: 540px;
         object-fit: cover;
@@ -322,9 +346,40 @@
 
 
 @media (width < 1024px) {
-    .arrival_wrapper {
+    .arrival__wrapper {
         width: 100%;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .woman-promo {
+
+        & .woman-promo__wrapper {
+            width: 100%;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+@media (width < 768px) {
+
+    .promo__card-container {
+        width: 100%;
+        height: max-content;
+    }
+
+    .woman-promo {
+        & .woman_promo_main_description {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    .arrivals_choose {
+        & .choose_name {
+            font-size: 10px;
+        }
     }
 }

@@ -3,35 +3,41 @@
 .catalog {
     @include flex-center;
     flex-direction: column;
+
     &__card {
         width: $max-width;
     }
+
     &__option {
+        display: flex;
         height: 132px;
         width: $max-width;
         position: relative;
+        padding-top: 51px;
     }
 
     &__details {
+        display: flex;
+        align-items: center;
+        width: 360px;
+        box-sizing: border-box;
+        cursor: pointer;
+        z-index: 1;
+
         &[open] .catalog__heading {
             color: $pink_text_color;
         }
+
         &[open] path {
             fill: $pink_text_color;
         }
+
         &[open] {
             width: 360px;
             height: max-content;
             background-color: white;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
-        position: absolute;
-        padding: 13px 16px 16px;
-        width: 360px;
-        top: 39px;
-        box-sizing: border-box;
-        cursor: pointer;
-        z-index: 1;
     }
 
     &__summary {
@@ -39,6 +45,7 @@
         gap: 11px;
         align-items: center;
     }
+
     &__heading {
         color: $black;
         font-family: Lato;
@@ -50,10 +57,12 @@
 
     &__item {
         margin-top: 16px;
+
         &[open] .catalog__head {
             color: $pink_text_color;
         }
     }
+
     &__head {
         display: flex;
         color: #6f6e6e;
@@ -74,11 +83,13 @@
         line-height: normal;
         text-decoration: none;
         width: max-content;
+
         &:hover {
             background-color: $pink_text_color;
             color: white;
         }
     }
+
     &__link-box {
         display: flex;
         flex-direction: column;
@@ -90,28 +101,30 @@
 .sort {
     display: flex;
     gap: 28px;
-    position: absolute;
-    width: 50%;
+    justify-content: end;
+    flex: auto;
     height: 100%;
-    left: 490px;
-    top: 51px;
     position: relative;
 
     &__details {
         display: flex;
     }
+
     &__heading {
         color: #6f6e6e;
         font-size: 14px;
         line-height: 17px;
         font: normal;
     }
+
     &__summary {
         @include flex-center;
+
         & svg {
             margin-left: 10px;
         }
     }
+
     &__box {
         padding: 7px 30px 11px 9px;
         flex-shrink: 0;
@@ -121,12 +134,14 @@
         position: absolute;
         top: 22px;
     }
+
     &__check {
         display: flex;
         gap: 9px;
         align-items: center;
         color: #6f6e6e;
     }
+
     .size {
         width: 81px;
     }
@@ -134,10 +149,10 @@
     &__check1 {
         border-color: #d43535;
     }
-    &__check2 {
-    }
-    &__check3 {
-    }
+
+    &__check2 {}
+
+    &__check3 {}
 }
 
 .pagination {
@@ -149,10 +164,12 @@
     height: 44px;
     border: 1px solid #ebebeb;
     margin-bottom: 96px;
+
     &__arrow-left {
         position: absolute;
         left: 15px;
     }
+
     &__arrow-right {
         position: absolute;
         right: 15px;
@@ -166,5 +183,56 @@
         font-weight: 300;
         line-height: normal;
         color: #C4C4C4;
+    }
+}
+
+
+@media (width < 1024px) {
+    .catalog__option {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .catalog__details {
+        padding-top: 3px;
+        width: max-content;
+    }
+
+    .catalog__details[open] {
+        width: max-content;
+    }
+}
+
+@media (width < 768px) {
+
+    .catalog__card {
+        width: 100%;
+        height: max-content;
+    }
+
+    .sort {
+        gap: 5px;
+    }
+
+    .arrival__wrapper {
+        padding-top: 24px;
+        padding-bottom: 46px;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+
+        & p {
+            padding: 0;
+        }
+    }
+
+    .sort__heading {
+        font-size: 12px;
+    }
+
+    .catalog__heading {
+        font-size: 12px;
+        display: none;
     }
 }
