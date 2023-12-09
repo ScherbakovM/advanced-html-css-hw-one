@@ -24,7 +24,8 @@ Product
 
 Catalog
 
-![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/2e468fc5-4ae9-464c-98e5-1333f6316fbb)
+![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/617b8f69-939a-4722-8bec-e2f56c604d78)
+
 
 Cart
 
