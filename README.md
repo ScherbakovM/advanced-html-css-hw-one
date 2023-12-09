@@ -14,6 +14,10 @@ catalog.html
 cart.html
 ```
 
+```
+registration.html
+```
+
 Main
 
 ![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/ccf9bebf-34f6-4259-9db3-9ec5bce10676)
