@@ -14,11 +14,6 @@
   overflow: hidden;
 }
 
-.app_wrapper {
-  width: 100%;
-  height: max-content;
-}
-
 .main {
   display: flex;
   justify-content: center;
@@ -45,27 +40,27 @@
   overflow: hidden;
 }
 
-.header_container {
+.header__container {
   width: 71.25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header_left_container {
+.header__left-container {
   display: flex;
   align-items: flex-end;
   gap: 41px;
 }
 
-.header_right_container {
+.header__right-container {
   display: flex;
   gap: 33px;
   height: 40px;
   align-items: flex-end;
 }
 
-.main_content {
+.main__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,13 +68,13 @@
   height: max-content;
 }
 
-.main_left_content,
-.main_right_content {
+.main__left-content,
+.main__right-content {
   width: 50%;
   height: max-content;
 }
 
-.main_left_content {
+.main__left-content {
   display: flex;
   justify-content: center;
   background-color: #f4f3f3;
@@ -87,7 +82,7 @@
   padding: 0;
 }
 
-.main_right_content {
+.main__right-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -201,7 +196,7 @@
   color: white;
 }
 
-.promo_model {
+.main__promo-model {
   width: 800px;
   height: 1024px;
   object-fit: contain;
@@ -721,13 +716,13 @@
   .item_img {
     height: 540px;
   }
-  .promo_model {
+  .main__promo-model {
     height: 1024px;
   }
 }
 
 @media (width < 1550px) {
-  .promo_model {
+  .main__promo-model {
     height: 768px;
   }
 
@@ -745,12 +740,12 @@
 }
 
 @media (width < 1025px) {
-  .promo_model {
+  .main__promo-model {
     width: 600px;
     height: 564px;
   }
 
-  .header_container {
+  .header__container {
     width: 100%;
     padding-left: 32px;
     padding-right: 32px;
@@ -849,17 +844,17 @@
 
 
 @media (width < 768px) {
-  .header_container {
+  .header__container {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .main_left_content {
+  .main__left-content {
     display: none;
   }
 
-  .main_right_content {
+  .main__right-content {
     margin: 0;
     padding: 0;
     width: 100%;

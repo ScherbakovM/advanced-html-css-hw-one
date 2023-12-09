@@ -2,6 +2,7 @@ import '../scss/style.scss';
 import '../scss/product.scss';
 import '../scss/catalog.scss';
 import '../scss/cart.scss';
+import '../scss/registration.scss';
 import { animate } from "motion"
 
 

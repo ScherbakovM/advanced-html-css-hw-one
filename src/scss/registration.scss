@@ -1,0 +1,256 @@
+@import "variable.scss";
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+
+    &__container {
+        padding-top: 64px;
+        padding-bottom: 96px;
+        display: flex;
+        width: $max-width;
+    }
+
+    &__left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: max-content;
+        height: max-content;
+    }
+
+    &__right-content {
+        padding-left: 128px;
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: max-content;
+        gap: 22px;
+    }
+
+    &__label {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__user-data {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__check-boxes {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__check-box {
+        width: 17px;
+        height: 17px;
+    }
+
+    &__check-boxes-label {
+        margin-left: 10px;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__input {
+        padding-top: 13px;
+        padding-bottom: 15px;
+        padding-left: 17px;
+        padding-right: 17px;
+        max-width: 360px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &::placeholder {
+            color: #b1b1b1;
+        }
+
+        &:active {
+            border-color: transparent;
+        }
+
+        outline-color: $pink_text_color;
+        border: 1px solid #A4A4A4;
+    }
+
+    &__prompt {
+        color: #B1B1B1;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        max-width: 360px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: max-content;
+        background-color: $pink_text_color;
+        border-color: transparent;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 16px 29px;
+        border: 1px solid transparent;
+        transition: 0.3s ease all;
+
+        &:hover {
+            background-color: white;
+            border: 1px solid #A4A4A4;
+            color: #A4A4A4;
+        }
+
+        & path {
+            transition: 0.3s ease all;
+        }
+
+        &:hover path {
+            fill: #A4A4A4;
+        }
+    }
+
+    &__loyalty-logo {
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__loyalty-description {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__loyalty-li {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__loyalty-li::before {
+        content: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='black'/%3E%3C/svg%3E%0A");
+        margin-right: 23px;
+    }
+}
+
+@media(width < 1400px) {
+    .registration {
+
+        &__right-content {
+            padding-left: 22px;
+        }
+
+        &__loyalty-logo {
+            font-size: 18px;
+        }
+
+        &__loyalty-description {
+            font-size: 18px;
+        }
+
+        &__loyalty-li {
+            font-size: 16px;
+        }
+
+        &__loyalty-li::before {
+            margin-right: 20px;
+            font-size: 18Spx;
+            height: 16px;
+        }
+    }
+
+}
+
+@media(width < 1024px) {
+    .registration {
+
+        &__container {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            box-sizing: border-box;
+        }
+
+        &__loyalty-logo {
+            font-size: 16px;
+        }
+
+        &__loyalty-description {
+            font-size: 16px;
+        }
+
+        &__loyalty-li {
+            font-size: 16px;
+        }
+
+        &__loyalty-li::before {
+            margin-right: 20px;
+            font-size: 16px;
+            height: 16px;
+        }
+    }
+
+}
+
+@media(width < 600px) {
+    .registration {
+
+        &__user-data {
+            width: 100%;
+
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__left-content {
+            width: 100%;
+        }
+
+        &__input {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &__right-content {
+            width: 100%;
+            padding-top: 40px;
+            padding-left: 0;
+        }
+    }
+
+}
