@@ -17,6 +17,9 @@ catalog.html
 
 ![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/2e468fc5-4ae9-464c-98e5-1333f6316fbb)
 
+![image](https://github.com/ScherbakovM/advanced-html-css-hw-one/assets/109952823/bf870425-3092-4102-b770-8c1f57bd05f8)
+
+
 
 
 сборка на vite
