@@ -17,6 +17,7 @@
     }
 
     &__details {
+        position: absolute;
         display: flex;
         align-items: center;
         width: 360px;
@@ -196,11 +197,12 @@
 
     .catalog__details {
         padding-top: 3px;
-        width: max-content;
+        width: 200px;
     }
 
     .catalog__details[open] {
-        width: max-content;
+        width: 200px;
+        z-index: 1;
     }
 }
 
